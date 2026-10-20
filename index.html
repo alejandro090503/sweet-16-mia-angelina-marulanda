@@ -902,6 +902,21 @@ footer{padding:52px 20px 64px;text-align:center;}
 .dcx-notas{padding:12px 6px 10px;}
 .dcx-nota img{width:52px;height:52px;}
 .dcx-nota figcaption{font-size:11.5px;}
+/* letras con degradado: la caja necesita aire arriba/abajo o el background-clip corta los trazos altos (S, l, M, f) */
+.sec-title,.cd-label,.fam-role,.ubic-tipo,.ft-name,.hero-xv,.hero-mis,.env-title{
+  line-height:1.3!important;padding-top:.22em!important;padding-bottom:.22em!important;
+  margin-top:-.22em;margin-bottom:-.12em;overflow:visible;}
+.hero-mis{display:block;width:max-content;margin-left:auto!important;margin-right:auto!important;-webkit-box-decoration-break:clone;}
+.portada-texto .hero-mis{margin-bottom:-.55em;}
+/* SCROLL DOWN bajo la fecha */
+.scroll-down{margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:8px;
+  font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:600;letter-spacing:.32em;
+  color:#F2E4C0;text-transform:uppercase;opacity:0;animation:sdIn 1s ease 2.6s forwards;}
+.scroll-down i{display:block;width:14px;height:14px;border-right:1.5px solid #DDBE6E;border-bottom:1.5px solid #DDBE6E;
+  transform:rotate(45deg);animation:sdBob 1.8s ease-in-out infinite;}
+@keyframes sdIn{to{opacity:.95}}
+@keyframes sdBob{0%,100%{transform:translateY(0) rotate(45deg);opacity:.5}50%{transform:translateY(6px) rotate(45deg);opacity:1}}
+@media(prefers-reduced-motion:reduce){.scroll-down,.scroll-down i{animation:none;opacity:.95}}
 </style>
 </head>
 <body>
@@ -947,6 +962,7 @@ footer{padding:52px 20px 64px;text-align:center;}
         <div class="hero-name" id="hName">Mia Angelina</div>
         <div class="hero-sep" id="hSep"></div>
         <div class="hero-date" id="hDate" data-en-html="December &middot; 6 &middot; 2026">6 &middot; Diciembre &middot; 2026</div>
+        <div class="scroll-down" aria-hidden="true"><span>Scroll Down</span><i></i></div>
       </div>
     </div>
   </section>
