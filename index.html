@@ -864,6 +864,27 @@ footer{padding:52px 20px 64px;text-align:center;}
 .msg-frame .mia-rosa-tl{top:-38px;left:-38px;right:auto;bottom:auto;transform:rotate(180deg) scaleX(-1);}
 .msg-frame .mia-rosa-br{bottom:-38px;right:-38px;top:auto;left:auto;transform:none;}
 .msg-frame{padding:54px 30px 54px;}
+/* codigo de vestimenta: reproduce la tarjeta "Black Tie · Neutral Palette" de la clienta */
+.dcx-lead{text-align:center;font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;line-height:1.5;color:var(--dark);max-width:340px;margin:-14px auto 22px;}
+.dcx-rule{display:flex;align-items:center;gap:12px;margin:0 auto 16px;}
+.dcx-rule::before,.dcx-rule::after{content:"";flex:1;height:1px;background:linear-gradient(to right,transparent,#B8923E,transparent);}
+.dcx-rule span{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--dark);white-space:nowrap;}
+.dcx-sws{display:grid;grid-template-columns:repeat(4,1fr);gap:14px 8px;max-width:360px;margin:0 auto 20px;}
+.dcx-sw{margin:0;display:flex;flex-direction:column;align-items:center;gap:7px;}
+.dcx-sw span{width:62px;height:62px;border-radius:50%;box-shadow:inset 0 -3px 8px rgba(0,0,0,.12),0 3px 8px rgba(60,45,20,.18);}
+.dcx-sw figcaption{font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:700;letter-spacing:1px;color:var(--dark);text-align:center;line-height:1.2;}
+.dcx-box{border:1px solid rgba(184,146,62,.6);padding:14px 12px;text-align:center;font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:500;line-height:1.55;color:var(--dark);max-width:380px;margin:0 auto 30px;background:rgba(251,247,239,.7);}
+.dcx-box em{font-size:18px;}
+.dcx-cols{display:flex;flex-direction:column;gap:28px;max-width:400px;margin:0 auto 30px;}
+.dcx-txt{text-align:center;font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;line-height:1.6;color:var(--dark);margin:0 auto 14px;}
+.dcx-foto{display:block;width:100%;height:auto;border-radius:4px;box-shadow:0 10px 26px rgba(40,30,15,.18);}
+.dcx-notas{border:1px solid rgba(184,146,62,.6);padding:18px 10px 16px;max-width:400px;margin:0 auto;background:rgba(251,247,239,.7);}
+.dcx-notas-row{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.dcx-nota{margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;}
+.dcx-nota img{width:66px;height:66px;border-radius:50%;}
+.dcx-nota figcaption{font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;line-height:1.25;color:var(--dark);text-align:center;}
+.env-desc{font-size:21px!important;line-height:1.6!important;max-width:320px!important;color:var(--dark)!important;font-weight:600!important;}
+.env-interactive.open .env-open-content{max-height:420px!important;}
 </style>
 </head>
 <body>
@@ -1025,15 +1046,19 @@ footer{padding:52px 20px 64px;text-align:center;}
     <div class="wheel-scene rv" id="wheelScene">
       <div class="wheel-ring" id="wheelRing">
           <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/m1.jpg" alt="Mia Angelina Marulanda" /></div>
+          <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/b6.jpg" alt="Mia Angelina Marulanda" /></div>
           <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/m3.jpg" alt="Mia Angelina Marulanda" /></div>
+          <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/b1.jpg" alt="Mia Angelina Marulanda" /></div>
           <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/m2.jpg" alt="Mia Angelina Marulanda" /></div>
+          <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/b3.jpg" alt="Mia Angelina Marulanda" /></div>
           <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/m4.jpg" alt="Mia Angelina Marulanda" /></div>
+          <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/b4.jpg" alt="Mia Angelina Marulanda" /></div>
           <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/m5.jpg" alt="Mia Angelina Marulanda" /></div>
-          <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/m2.jpg" alt="Mia Angelina Marulanda" /></div>
+          <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/b2.jpg" alt="Mia Angelina Marulanda" /></div>
           <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/m3.jpg" alt="Mia Angelina Marulanda" /></div>
+          <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/b7.jpg" alt="Mia Angelina Marulanda" /></div>
           <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/m1.jpg" alt="Mia Angelina Marulanda" /></div>
-          <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/m4.jpg" alt="Mia Angelina Marulanda" /></div>
-          <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/m3.jpg" alt="Mia Angelina Marulanda" /></div>
+          <div class="wheel-card"><img data-src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/sweet-16-mia-angelina-marulanda/b5.jpg" alt="Mia Angelina Marulanda" /></div>
       </div>
     </div>
     <p class="gal-hint rv" data-en="Drag to spin">Arrastra para girar</p>
@@ -1050,18 +1075,6 @@ footer{padding:52px 20px 64px;text-align:center;}
     <h2 class="sec-title rv" data-en="Location">Ubicaci&oacute;n</h2>
 
     <!-- Recepcion -->
-    <div class="ubic-card rv">
-      <!-- Corner ornaments -->
-      <svg class="mf-corner mf-tl" viewBox="0 0 36 36" fill="none"><path d="M4,24 L4,4 L24,4" stroke="rgba(184,146,62,0.72)" stroke-width="1.6" stroke-linecap="round"/><circle cx="4" cy="4" r="2.8" fill="rgba(184,146,62,0.62)"/><path d="M10,4 Q10,10 4,10" stroke="rgba(184,146,62,0.42)" stroke-width="1" fill="none"/><circle cx="24" cy="4" r="1.6" fill="rgba(17,17,17,0.38)"/><circle cx="4" cy="24" r="1.6" fill="rgba(17,17,17,0.38)"/></svg>
-      <svg class="mf-corner mf-tr" viewBox="0 0 36 36" fill="none"><path d="M4,24 L4,4 L24,4" stroke="rgba(184,146,62,0.72)" stroke-width="1.6" stroke-linecap="round"/><circle cx="4" cy="4" r="2.8" fill="rgba(184,146,62,0.62)"/><path d="M10,4 Q10,10 4,10" stroke="rgba(184,146,62,0.42)" stroke-width="1" fill="none"/><circle cx="24" cy="4" r="1.6" fill="rgba(17,17,17,0.38)"/><circle cx="4" cy="24" r="1.6" fill="rgba(17,17,17,0.38)"/></svg>
-      <svg class="mf-corner mf-bl" viewBox="0 0 36 36" fill="none"><path d="M4,24 L4,4 L24,4" stroke="rgba(184,146,62,0.72)" stroke-width="1.6" stroke-linecap="round"/><circle cx="4" cy="4" r="2.8" fill="rgba(184,146,62,0.62)"/><path d="M10,4 Q10,10 4,10" stroke="rgba(184,146,62,0.42)" stroke-width="1" fill="none"/><circle cx="24" cy="4" r="1.6" fill="rgba(17,17,17,0.38)"/><circle cx="4" cy="24" r="1.6" fill="rgba(17,17,17,0.38)"/></svg>
-      <svg class="mf-corner mf-br" viewBox="0 0 36 36" fill="none"><path d="M4,24 L4,4 L24,4" stroke="rgba(184,146,62,0.72)" stroke-width="1.6" stroke-linecap="round"/><circle cx="4" cy="4" r="2.8" fill="rgba(184,146,62,0.62)"/><path d="M10,4 Q10,10 4,10" stroke="rgba(184,146,62,0.42)" stroke-width="1" fill="none"/><circle cx="24" cy="4" r="1.6" fill="rgba(17,17,17,0.38)"/><circle cx="4" cy="24" r="1.6" fill="rgba(17,17,17,0.38)"/></svg>
-      <div class="ubic-tipo" data-en="Religious Ceremony">Ceremonia Religiosa</div>
-      <div class="ubic-name" data-en="To be confirmed">Por confirmar</div>
-      <div class="ubic-addr" data-en="Jersey City, New Jersey">Jersey City, Nueva Jersey</div>
-      <div class="ubic-hora" style="font-size:20px" data-en="Time to be confirmed">Hora por confirmar</div>
-    </div>
-
     <!-- Cena -->
     <div class="ubic-card rv">
       <!-- Corner ornaments -->
@@ -1119,33 +1132,26 @@ footer{padding:52px 20px 64px;text-align:center;}
   <section id="sdc" style="position:relative;">
     <div class="eyebrow rv" data-en="Attire">Etiqueta</div>
     <h2 class="sec-title rv" data-en="Dress Code">C&oacute;digo de Vestimenta</h2>
-    <div class="dc-note rv" data-en="Elegant &middot; Beige">Elegante &middot; Beige</div>
-    <div class="dc-cards rv">
-      <figure class="dc-card">
-        <img src="./caballero.png" alt="Caballero con traje formal" width="533" height="784">
-        <figcaption>
-          <span class="dc-card-lbl" data-en="Gentlemen">Caballeros</span>
-          <span class="dc-card-sub" data-en="Formal suit">Traje formal</span>
-        </figcaption>
-      </figure>
-      <figure class="dc-card">
-        <img src="./dama.png" alt="Dama con vestido largo" width="533" height="784">
-        <figcaption>
-          <span class="dc-card-lbl" data-en="Ladies">Damas</span>
-          <span class="dc-card-sub" data-en="Long gown">Vestido largo</span>
-        </figcaption>
-      </figure>
+    <div class="dc-note rv" data-en="Dress to Impress &middot; Elegant">Dress to Impress &middot; Elegante</div>
+    <p class="dcx-lead rv" data-en="We invite our guests to celebrate with us in elegant neutral tones.">Te invitamos a celebrar con nosotros en elegantes tonos neutros.</p>
+    <div class="dcx-rule rv"><span data-en="The Palette">La Paleta</span></div>
+    <div class="dcx-sws rv"><figure class="dcx-sw"><span style="background:radial-gradient(circle at 32% 28%,#F3E7D3,#E6D2B0,#C9AE84)"></span><figcaption data-en="CHAMPAGNE">CHAMPAGNE</figcaption></figure><figure class="dcx-sw"><span style="background:radial-gradient(circle at 32% 28%,#FBF6EC,#EFE5D3,#D9CCB4)"></span><figcaption data-en="OYSTER">OSTRA</figcaption></figure><figure class="dcx-sw"><span style="background:radial-gradient(circle at 32% 28%,#DDC7B2,#C8AD94,#A88C73)"></span><figcaption data-en="TAUPE">TAUPE</figcaption></figure><figure class="dcx-sw"><span style="background:radial-gradient(circle at 32% 28%,#E4DBD2,#D2C7BC,#B5A99C)"></span><figcaption data-en="STONE">PIEDRA</figcaption></figure><figure class="dcx-sw"><span style="background:radial-gradient(circle at 32% 28%,#ECECEE,#D9D9DC,#BDBDC2)"></span><figcaption data-en="DOVE GRAY">GRIS PERLA</figcaption></figure><figure class="dcx-sw"><span style="background:radial-gradient(circle at 32% 28%,#A9A6A2,#86827D,#5E5B57)"></span><figcaption data-en="PEWTER">PELTRE</figcaption></figure><figure class="dcx-sw"><span style="background:radial-gradient(circle at 32% 28%,#F2DFA6,#D6B76E,#A8873F)"></span><figcaption data-en="SOFT GOLD">ORO SUAVE</figcaption></figure><figure class="dcx-sw"><span style="background:radial-gradient(circle at 32% 28%,#F4F4F6,#CFCFD4,#9C9CA3)"></span><figcaption data-en="SILVER">PLATA</figcaption></figure></div>
+    <p class="dcx-box rv" data-en-html="<em>A timeless and elegant palette of neutral tones and metallics.</em><br>We kindly ask our guests to <u>avoid</u> colors outside of this palette."><em>Una paleta atemporal y elegante de tonos neutros y metálicos.</em><br>Te pedimos amablemente <u>evitar</u> colores fuera de esta paleta.</p>
+    <div class="dcx-cols rv">
+      <div class="dcx-col">
+        <div class="dcx-rule"><span data-en="Ladies">Damas</span></div>
+        <p class="dcx-txt" data-en-html="Elegant, floor length gowns in the neutral tones shown above. No short dresses. Black, red and white are <u>not</u> allowed.">Vestido largo y elegante en los tonos neutros de la paleta. Sin vestidos cortos. Negro, rojo y blanco <u>no</u> est&aacute;n permitidos.</p>
+        <img class="dcx-foto" src="./dc-damas.jpg" alt="Vestidos largos en tonos neutros" width="536" height="420" loading="lazy">
+      </div>
+      <div class="dcx-col">
+        <div class="dcx-rule"><span data-en="Gentlemen">Caballeros</span></div>
+        <p class="dcx-txt" data-en-html="Completely black suits or tuxedos with a black shirt, black tie or bow tie, and black shoes. No colors, only black.">Traje o esmoquin completamente negro, con camisa negra, corbata o mo&ntilde;o negro y zapatos negros. Sin colores, solo negro.</p>
+        <img class="dcx-foto" src="./dc-caballeros.jpg" alt="Trajes completamente negros" width="421" height="420" loading="lazy">
+      </div>
     </div>
-    <p class="dc-reserve rv" data-en-html="We kindly suggest <strong>beige</strong> tones">Te sugerimos tonos <strong>beige</strong></p>
-    <div class="dc-crown-row rv">
-      <figure class="dc-crown-item"><span class="dc-crown" style="background-color:#D4C5B2;" title="Beige"></span><figcaption class="dc-crown-lbl">Beige</figcaption></figure>
-    </div>
-    <p class="dc-reserve rv" style="margin-top:22px" data-en-html="Please <strong>avoid</strong> these colors">Por favor <strong>evita</strong> estos colores</p>
-    <div class="dc-crown-row rv">
-      <figure class="dc-crown-item"><span class="dc-crown" style="background-color:#000000;" title="Negro"></span><figcaption class="dc-crown-lbl" data-en="Black">Negro</figcaption></figure>
-      <figure class="dc-crown-item"><span class="dc-crown" style="background-color:#831100;" title="Vino"></span><figcaption class="dc-crown-lbl" data-en="Wine">Vino</figcaption></figure>
-      <figure class="dc-crown-item"><span class="dc-crown dc-crown-blanco" style="background-color:#FFFFFF;" title="Blanco"></span><figcaption class="dc-crown-lbl" data-en="White">Blanco</figcaption></figure>
-      <figure class="dc-crown-item"><span class="dc-crown" style="background-color:#ADADAD;" title="Gris"></span><figcaption class="dc-crown-lbl" data-en="Gray">Gris</figcaption></figure>
+    <div class="dcx-notas rv">
+      <div class="dcx-rule"><span data-en="Important Notes">Notas Importantes</span></div>
+      <div class="dcx-notas-row"><figure class="dcx-nota"><img src="./dc-no1.png" alt="" width="104" height="104" loading="lazy"><figcaption data-en-html="No black<br>for ladies">Sin negro<br>para damas</figcaption></figure><figure class="dcx-nota"><img src="./dc-no2.png" alt="" width="104" height="104" loading="lazy"><figcaption data-en-html="No red<br>for anyone">Sin rojo<br>para nadie</figcaption></figure><figure class="dcx-nota"><img src="./dc-no3.png" alt="" width="104" height="104" loading="lazy"><figcaption data-en-html="No white<br>for anyone">Sin blanco<br>para nadie</figcaption></figure><figure class="dcx-nota"><img src="./dc-no4.png" alt="" width="104" height="104" loading="lazy"><figcaption data-en-html="No short<br>dresses">Sin vestidos<br>cortos</figcaption></figure></div>
     </div>
   </section>
 
