@@ -9,14 +9,14 @@
 <meta property="og:url" content="https://sweet-16-mia-angelina-marulanda.vercel.app/">
 <meta property="og:title" content="Mia Angelina&#39;s Sweet Sixteen · December 6, 2026">
 <meta property="og:description" content="You are invited to celebrate a very special day. Tap to open your invitation.">
-<meta property="og:image" content="https://sweet-16-mia-angelina-marulanda.vercel.app/og.jpg?v=20261020">
+<meta property="og:image" content="https://sweet-16-mia-angelina-marulanda.vercel.app/og.jpg?v=20261020b">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mia Angelina&#39;s Sweet Sixteen · December 6, 2026">
 <meta name="twitter:description" content="You are invited to celebrate a very special day. Tap to open your invitation.">
-<meta name="twitter:image" content="https://sweet-16-mia-angelina-marulanda.vercel.app/og.jpg?v=20261020">
+<meta name="twitter:image" content="https://sweet-16-mia-angelina-marulanda.vercel.app/og.jpg?v=20261020b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <style>
@@ -850,6 +850,20 @@ footer{padding:52px 20px 64px;text-align:center;}
 /* nombre de la festejada en serif legible (no script) */
 .hero-name{font-family:'Playfair Display',serif!important;font-style:italic;font-weight:400;font-size:clamp(40px,11.5vw,54px);letter-spacing:.5px;}
 .ft-name{font-family:'Playfair Display',serif!important;font-style:italic;font-size:44px;}
+/* lluvia de sobres: diseno de boda-jeffersson-y-vanessa */
+.orn{display:flex;align-items:center;gap:12px;margin:0 auto 28px;max-width:260px}
+.orn-line{flex:1;height:1px;background:linear-gradient(to right,transparent,#B8923E,transparent)}
+.orn-diamond{width:6px;height:6px;background:#B8923E;transform:rotate(45deg);flex-shrink:0;opacity:.75}
+.orn-diamond-sm{width:4px;height:4px;background:#B8923E;transform:rotate(45deg);flex-shrink:0;opacity:.45;margin:0 2px}
+.env-body{filter:drop-shadow(0 10px 26px rgba(90,64,18,.2))}
+.env-title{background:linear-gradient(135deg,#5A4012 0%,#9C7A2E 26%,#F2DC9C 50%,#9C7A2E 74%,#5A4012 100%);background-size:220% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:#7A5A1E;animation:goldFlow 7s ease-in-out infinite}
+@keyframes goldFlow{0%,100%{background-position:0% center}50%{background-position:100% center}}
+.env-tap-hint{font-family:'Italiana',serif;font-size:14px;font-weight:400}
+/* rosas del mensaje: en las esquinas del marco, sin tapar el texto */
+.msg-frame .mia-rosa{width:86px;}
+.msg-frame .mia-rosa-tl{top:-38px;left:-38px;right:auto;bottom:auto;transform:rotate(180deg) scaleX(-1);}
+.msg-frame .mia-rosa-br{bottom:-38px;right:-38px;top:auto;left:auto;transform:none;}
+.msg-frame{padding:54px 30px 54px;}
 </style>
 </head>
 <body>
@@ -890,7 +904,7 @@ footer{padding:52px 20px 64px;text-align:center;}
       <div class="portada-noche" aria-hidden="true"></div>
       <div class="portada-chispas" id="portadaChispas" aria-hidden="true"></div>
       <div class="portada-texto">
-        <div class="hero-mis" id="hMis" data-en="My">Mis</div>
+        <div class="hero-mis" id="hMis">Sweet</div>
         <div class="hero-xv" id="hXv">XVI</div>
         <div class="hero-name" id="hName">Mia Angelina</div>
         <div class="hero-sep" id="hSep"></div>
@@ -1146,26 +1160,27 @@ footer{padding:52px 20px 64px;text-align:center;}
     <div class="env-stage">
       <div class="eyebrow rv" data-en="With Love">Con Cari&ntilde;o</div>
       <h2 class="sec-title rv" data-en="Envelope Shower">Lluvia de Sobres</h2>
+      <div class="orn" style="margin-top:14px;margin-bottom:0"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
 
       <button class="env-interactive" id="envGift" type="button" aria-label="Sobre &mdash; toca para abrir" aria-expanded="false">
         <div class="env-body" id="envGiftBody">
           <svg class="env-svg" viewBox="0 0 260 200" preserveAspectRatio="none" aria-hidden="true">
             <defs>
               <linearGradient id="envPaper" x1="0" y1="1" x2="1" y2="0">
-                <stop offset="0%" stop-color="#faf6ee"/><stop offset="100%" stop-color="#ffffff"/>
+                <stop offset="0%" stop-color="#fff8e6"/><stop offset="100%" stop-color="#fdf3dc"/>
               </linearGradient>
             </defs>
-            <rect x="18" y="52" width="224" height="132" rx="8" fill="url(#envPaper)" stroke="rgba(17,17,17,.45)" stroke-width="1.4"/>
-            <path d="M18 184 L130 110 L242 184" stroke="rgba(17,17,17,.28)" stroke-width="1" fill="none"/>
+            <rect x="18" y="52" width="224" height="132" rx="8" fill="url(#envPaper)" stroke="rgba(160,124,52,.55)" stroke-width="1.4"/>
+            <path d="M18 184 L130 110 L242 184" stroke="rgba(160,124,52,.32)" stroke-width="1" fill="none"/>
           </svg>
           <div class="env-flap-wrap" aria-hidden="true">
             <svg viewBox="0 0 224 86" preserveAspectRatio="none" style="width:100%;height:100%;display:block">
               <defs>
                 <linearGradient id="envFlap" x1="0" y1="1" x2="1" y2="0">
-                  <stop offset="0%" stop-color="#f5eedf"/><stop offset="100%" stop-color="#fffdf8"/>
+                  <stop offset="0%" stop-color="#fdf3dc"/><stop offset="100%" stop-color="#fffaef"/>
                 </linearGradient>
               </defs>
-              <path d="M0 0 L112 86 L224 0 Z" fill="url(#envFlap)" stroke="rgba(17,17,17,.45)" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M0 0 L112 86 L224 0 Z" fill="url(#envFlap)" stroke="rgba(160,124,52,.55)" stroke-width="1.5" stroke-linejoin="round"/>
             </svg>
           </div>
           <svg class="env-seal" viewBox="0 0 60 60" aria-hidden="true">
